@@ -1,0 +1,109 @@
+.results-wrapper {
+    bottom: 20px;
+    right: 10px;
+    list-style-type: none;
+    width: 1200px;
+    padding-left: 40px;
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+
+.profile-pic {
+    margin: 160px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 20px;
+}
+
+.results {
+    overflow-y: auto;
+    height: 600px;
+    width: 1200px;
+}
+
+.usr-card {
+    display: inline-block;
+    border: 2px #DEDEDE solid;
+    background-color: #F6F6F6;
+    font-weight: 500;
+    width: 344px;
+    height: 200px;
+}
+
+#p-name {
+    text-align: center;
+    width: 250px;
+    padding-left: 55px;
+    position: relative;
+    bottom: 55px;
+}
+
+.show-model-btn {
+    padding-left: 220px;
+    position: relative;
+    bottom: 30px;
+}
+
+.modal-patient-name {
+    position: relative;
+    top: 500px
+}
+
+.cards {
+    margin: 20px;
+    font-size: 20px;
+    grid-area: card;
+}
+
+.modal-patient-consults{
+    position: fixed;
+    top: 300px
+}
+
+.consults-box {
+    position: relative;
+    background-color: #EFEFEF;
+    opacity: 0.7;
+    border: 2px solid black;
+    height: 60%;
+    bottom: 100px;
+    right: 10px;
+}
+
+.consult-history-text {
+    position: relative;
+    top: 24px
+}
+
+.scrollable-div {
+    overflow-x: auto;
+}
+
+.patient-modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.new-consult-text {
+    bottom: 60px;
+    position: relative;
+}
+
+.close-btn {
+    position: relative;
+    bottom: 60px;
+}

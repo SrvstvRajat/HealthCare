@@ -1,0 +1,39 @@
+.left-sec-text {
+    width: 500px;
+}
+
+.back-btn {
+    z-index: 0;
+    padding-left: 30px;
+    padding-top: 50px;
+    right: 220px;
+}
+
+.register-text {
+    padding-right: 400px;
+}
+
+.left-sec {
+    right: 230px;
+}
+
+.register-area {
+    display: flex;
+    position: relative;
+    right: 850px;
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.navbar-fixed {
+    right: 380px;
+}
+
+
+.col .s12 {
+    z-index: 0;
+}
+
+.container {
+    height: 800px;
+}

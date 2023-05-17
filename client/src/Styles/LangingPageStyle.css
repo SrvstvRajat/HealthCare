@@ -1,0 +1,234 @@
+html{
+  background-image: linear-gradient(to right bottom, #ffffff, #edeff2, #d9dfe6, #c3d1d7, #adc3c6);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+p, a, li, span, label, input, text, textarea{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+.header{
+  margin-top: 10px;
+  display: flex;
+  height: 119px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+}
+
+li a { text-decoration: none;}
+li a:visited { text-decoration: none; color:#000; }
+li a:hover { text-decoration: none; color:#000; }
+li a:focus { text-decoration: none; color:#000; }
+li a:hover, .navBtn:active { text-decoration: none; color:#000; }
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.title {
+  text-align: center;
+}
+
+.nav-bar-left{
+  padding-left: 2%;
+  padding-top: 3.5%;
+  display: flex;
+  text-decoration: none;
+  z-index: 1;
+}
+
+
+.nav-bar-right{
+  padding-left: 60%;
+  padding-top: 3.5%;
+  z-index: 1
+  
+}
+
+.main-text-left{
+  font-size: 60px;
+  width: 100%;
+  font-weight: 400;
+}
+
+
+.main-body{
+  display: flex;
+}
+
+.main-body-left{
+  padding-top: 5%;
+  padding-left: 5%;
+  font-size: 60px;
+  width: 40%;
+  font-weight: 300;
+}
+
+.main-body-right{
+  padding-right: 20px;
+  width: auto;
+  height: auto;
+  border-color: black;
+}
+
+.right-pic{
+  width: 1100px;
+  height: auto;
+  padding-left: 90px;
+  position: fixed;
+  top: 20px;
+}
+
+
+.pic-container {
+  width: 950px;
+  height: 600px;
+}
+
+.logo{
+  position: relative;
+  width: 163px;
+  height: auto;
+  top: 20px;
+  left:20px ;
+}
+
+.socials {
+  width: 30%;
+  padding-left: 10.5%;
+  padding-top: 5% ;
+}
+
+
+
+li img {
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+
+.sLogo {
+  width: 90px;
+  height: 90px;
+}
+
+
+.buttonsB {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  height: 200px;
+/*   padding: 2em 0em; */
+}
+
+.containerB {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFF;
+  padding:  40px 0px;
+  width: 100%;
+  background-color: transparent;
+  padding-right: 200px;
+}
+
+.secondary-text-left {
+  padding-top: 30px;
+}
+
+.btn1 {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn1:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid  2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  height: 44px;
+}
+
+.join-btn {
+  padding-top: 10px;
+}
+
+.effect04::before,
+.effect04 span{
+    margin: 0 auto;
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transition-duration: 0.4s;
+}
+
+/* 文字1を上に */
+.effect04:hover{
+
+  background-color: #000;
+}
+
+/* HOVERしたら文字1を上に */
+.effect04:hover span{
+  -webkit-transform: translateY(-400%) scale(-0.1,20);
+          transform: translateY(-400%) scale(-0.1,20);
+}
+
+/*文字2*/
+.effect04::before{
+  content: attr(data-sm-link-text);
+	color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1,20);
+          transform: translateY(500%) scale(-0.1,20);
+}
+
+/* HOVERしたら文字2を上に */
+.effect04:hover::before{
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1,1);
+  transform: translateY(0) scale(1,1);
+}
