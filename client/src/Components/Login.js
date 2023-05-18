@@ -20,7 +20,7 @@ class Login extends Component {
     const { user } = this.props.auth
     // If logged in and user navigates to Login page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      if(user.role === "Doctor"){
+      if(user.role === "doctors"){
         this.props.history.push("/dashboard")
       }else{
         this.props.history.push("/menu");

@@ -26,6 +26,9 @@ function LandingPage() {
           </div>
           <div className="nav-bar-right">
             <ul>
+            <li>
+                <a href="/register">Register  </a>
+              </li>
               <li>
                 <a href="/login">Login</a>
               </li>

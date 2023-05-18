@@ -41,8 +41,7 @@ function App() {
         <div className="App">
           <Switch>
             <Route path="/login" exact component={Login} />
-            
-            
+            <Route path="/register" exact component={Register}/>
             <Route path="/" exact component={LandingPage} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
@@ -50,6 +49,7 @@ function App() {
               <PrivateRoute exact path="/dashboard/register" component={Register} />
               <PrivateRoute exact path="/dashboard/register/success" component={CreatedUser} />
               <PrivateRoute exact path="/dashboard/search" component={Search} />
+              {/* <PrivateRoute exact path="/dashboard/consult" component={Sea} /> */}
             </Switch>
           </Switch>
         </div>

@@ -278,7 +278,7 @@ class Search extends React.Component {
                       className= "close-btn"
                       style={{
                         position: "relative",
-                        top: "545px",
+                        top: "650px",
                         left: "40px",
                         backgroundColor: "transparent",
                         border: "none",
@@ -288,14 +288,15 @@ class Search extends React.Component {
                     </button>
                     <button
                       style={{
+                        textAlign:"center",
                         position: "relative",
                         fontWeight: "500",
-                        color: "green",
+                        color: "#000000",
                         fontSize: "50px",
                         backgroundColor: "transparent",
                         border: "none",
                         top: "600px",
-                        left: "1230px",
+                        // left: "1230px",
                       }}
                       onClick={() => {
                         this.openRegisterConsultModal(
