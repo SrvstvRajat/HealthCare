@@ -20,6 +20,7 @@ export function registerUser(userData, history) {
 
 // Register Doctor
 export function registerDoctor(userData, history) {
+  console.log(userData)
   return (dispatch) => {
     axios
       .post("/api/users/register/doctor", userData)

@@ -34,7 +34,7 @@ class Login extends Component {
 
     
     if (nextProps.auth.isAuthenticated) {
-      if(user.role === "Doctor")
+      if(user.role === "doctors")
         this.props.history.push("/dashboard");
         window.location.reload();
       if(user.role === "Patient")

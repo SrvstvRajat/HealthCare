@@ -39,8 +39,9 @@ class MainMenu extends Component {
               className="history-text"
               style={{ fontWeight: "bold", fontFamily: "poppins" }}
             >
-             History of Consults
+              Patient's Timeline
             </h3>
+            <br></br>
           </div>
           <div>
             <img
@@ -50,10 +51,11 @@ class MainMenu extends Component {
             />
           </div>
         </div>
+        <br></br>
         <div className="patient-name">
-          <p>{user.name}</p>
+          <p>Patient Name : <b>{user.name}</b></p>
         </div>
-        <div className="filters">
+        {/* <div className="filters">
           <ul>
             <li>
               <a className="filter" href="/Dashboard">
@@ -71,7 +73,8 @@ class MainMenu extends Component {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
+        <br></br>
         <div className="consults-box">
           {this.state.foundConsults.map((item, key) => {
             return (

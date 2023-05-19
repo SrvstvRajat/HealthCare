@@ -271,7 +271,7 @@ class Register extends Component {
                           invalid: errors.role,
                         })}
                       />
-                      <label htmlFor="Role">Role</label>
+                      <label htmlFor="role">Role</label>
                       <span className="red-text">{errors.role}</span>
                     </div>
 

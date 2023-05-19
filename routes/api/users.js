@@ -71,6 +71,7 @@ router.post("/register/doctor", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email already exists" });
     } else {
+      // console.log(req.body);
       const newUser = new User({
         name: req.body.name,
         email: req.body.email,
@@ -84,13 +85,14 @@ router.post("/register/doctor", (req, res) => {
         country: req.body.country,
         role: req.body.role
       });
-
       const newDoctor = new Doctor({
         name: newUser.name,
         workingHospital: req.body.workingHospital,
         id_User: newUser._id,
         speciality: req.body.speciality,
       });
+      console.log("kuch to ho ja")
+      console.log(newDoctor);
       // Hash password before saving in database
       bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(newUser.password, salt, (err, hash) => {
