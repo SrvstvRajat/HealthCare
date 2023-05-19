@@ -8,7 +8,7 @@ function LandingPage() {
         <div className="header">
           <img
             className="logo"
-            src={require("../images/MedBase-Logo.png")}
+            src={require("../images/MedBase-Logo.jpg")}
             alt="Not found"
           />
           {/* */}
@@ -33,6 +33,9 @@ function LandingPage() {
             <ul>
             <li>
                 <a href="/register">Register  </a>
+              </li>
+              <li>
+                <a href="/register/doctor">Register as Doctor</a>
               </li>
               <li>
                 <a href="/login">Login</a>
