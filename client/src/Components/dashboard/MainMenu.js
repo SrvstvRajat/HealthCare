@@ -39,13 +39,13 @@ class MainMenu extends Component {
               className="history-text"
               style={{ fontWeight: "bold", fontFamily: "poppins" }}
             >
-              Historial de consultas
+             History of Consults
             </h3>
           </div>
           <div>
             <img
               className="logo-med"
-              src={require("../../images/MedBase-Logo.png")}
+              src={require("../../images/MedBase-Logo.jpg")}
               alt="Not found"
             />
           </div>
@@ -57,22 +57,17 @@ class MainMenu extends Component {
           <ul>
             <li>
               <a className="filter" href="/Dashboard">
-                Esta semana
+                This Week
               </a>
             </li>
             <li>
               <a className="filter" href="/Dashboard">
-                Este mes
+                This month
               </a>
             </li>
             <li>
               <a className="filter" href="/Dashboard">
-                Este año
-              </a>
-            </li>
-            <li>
-              <a className="filterr" href="/Dashboard">
-                Personalizar
+                This year
               </a>
             </li>
           </ul>

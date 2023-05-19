@@ -25,6 +25,7 @@ class Login extends Component {
       }else{
         this.props.history.push("/menu");
       } 
+      
   }
 }
 

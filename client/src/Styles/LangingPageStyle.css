@@ -60,9 +60,16 @@ li a {
 
 
 .nav-bar-right{
-  padding-left: 60%;
+  padding-left: 50%;
   padding-top: 3.5%;
   z-index: 1
+  
+}
+
+.login-button {
+  text-align: right;
+  padding-top: 3.5%;
+  padding-left: 10%;
   
 }
 

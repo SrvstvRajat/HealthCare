@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { registerUser } from "../actions/authActions";
+import { registerUser, registerDoctor } from "../actions/authActions";
 import classnames from "classnames";
 import Navbar from "./Navbar.js";
 import "../Styles/RegisterStyle.css";
@@ -21,6 +21,9 @@ class Register extends Component {
       direction2: "",
       phoneNumber: "",
       country: "",
+      role: "",
+      workingHospital: "",
+      speciality: "",
       errors: {},
       submitedForm: false,
     };
@@ -52,6 +55,10 @@ class Register extends Component {
       direction1: this.state.direction1,
       direction2: this.state.direction2,
       country: this.state.country,
+      role: this.state.role,
+      workingHospital: this.state.workingHospital,
+      speciality: this.state.speciality
+
     };
     
     setTimeout(() => {
@@ -61,7 +68,8 @@ class Register extends Component {
         this.setState({...this.state, submitedForm: true }, console.log("mmg"))
       }
   }, 2500);
-  this.props.registerUser(newUser, this.props.history);
+  // this.props.registerUser(newUser, this.props.history);
+  this.props.registerDoctor(newUser, this.props.history);
   };
   
   render() {
@@ -266,6 +274,7 @@ class Register extends Component {
 
 Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
+  registerDoctor: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
 };
@@ -273,4 +282,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
   errors: state.errors,
 });
-export default connect(mapStateToProps, { registerUser })(withRouter(Register));
+export default connect(mapStateToProps, { registerUser, registerDoctor })(withRouter(Register));

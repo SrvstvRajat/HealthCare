@@ -18,6 +18,24 @@ export function registerUser(userData, history) {
   };
 }
 
+// Register Doctor
+export function registerDoctor(userData, history) {
+  return (dispatch) => {
+    axios
+      .post("/api/users/register/doctor", userData)
+      .then(history.push("/dashboard/register/success")) // re-direct to login on successful register
+      .catch((err) =>
+        dispatch({
+          type: GET_ERRORS,
+          payload: err.response.data,
+        })
+      );
+    console.log("registerDoctor");
+  };
+}
+
+
+
 export const registerConsult = (newConsult, history) => (dispatch) => {
   
   axios

@@ -158,7 +158,8 @@ router.post("/login", (req, res) => {
               success: true,
               token: "Bearer " + token,
               user_ID: user.id,
-              user_Name: user.name
+              user_Name: user.name,
+              role: user.role
             });
           }
         );

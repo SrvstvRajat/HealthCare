@@ -115,7 +115,7 @@ class Search extends React.Component {
           </div>
           <img
             className="logo"
-            src={require("../images/MedBase-Logo.png")}
+            src={require("../images/MedBase-Logo.jpg")}
             alt="Not found"
             style={{}}
           />
@@ -296,7 +296,8 @@ class Search extends React.Component {
                         backgroundColor: "transparent",
                         border: "none",
                         top: "600px",
-                        // left: "1230px",
+                        //left: "1230px",
+                        
                       }}
                       onClick={() => {
                         this.openRegisterConsultModal(
@@ -304,6 +305,7 @@ class Search extends React.Component {
                         );
                       }}
                     >
+                   
                       <b className= "new-consult-text">Create new consult</b>
                     </button>
                   </Modal>

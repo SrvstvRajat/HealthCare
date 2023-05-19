@@ -25,7 +25,7 @@ class Dashboard extends Component {
                   <div class="main-container">
                     <section>
                       <button class="btn btn-blue btn-border">
-                        Registrar paciente
+                        Register Patient
                       </button>
                     </section>
                   </div>
@@ -36,7 +36,7 @@ class Dashboard extends Component {
                   <div class="main-container">
                     <section>
                       <button class="btn btn-blue btn-border">
-                        Configuracion
+                        Settings
                       </button>
                     </section>
                   </div>
@@ -47,7 +47,7 @@ class Dashboard extends Component {
                   <div class="main-container">
                     <section>
                       <button class="btn btn-blue btn-border">
-                        Buscar Paciente
+                        Search Patient
                       </button>
                     </section>
                   </div>
@@ -75,7 +75,7 @@ class Dashboard extends Component {
               src={require("../../images/HDmedBaseRightPic.png")}
               alt=""
             />
-            <img className= "main-logo" src={require("../../images/MedBase-Logo.png")} alt=""/>
+            <img className= "main-logo" src={require("../../images/MedBase-Logo.jpg")} alt=""/>
           </div>
         </div>
       </div>

@@ -8,6 +8,8 @@ import Dashboard from "./Components/dashboard/Dashboard.js"
 import LandingPage from "./Components/LandingPage.js";
 import Login from "./Components/Login.js";
 import Register from "./Components/Register";
+import RegisterDoctor from "./Components/RegisterDoctor";
+
 import MainMenu from "./Components/dashboard/MainMenu"
 import CreatedUser from "./Components/NewPatientConfirmation"
 
@@ -42,6 +44,7 @@ function App() {
           <Switch>
             <Route path="/login" exact component={Login} />
             <Route path="/register" exact component={Register}/>
+            <Route path="/register/doctor" exact component={RegisterDoctor}/>
             <Route path="/" exact component={LandingPage} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />

@@ -11,19 +11,24 @@ function LandingPage() {
             src={require("../images/MedBase-Logo.png")}
             alt="Not found"
           />
-          <div className="nav-bar-left">
+          {/* */}
+          <div className="nav-bar-left" >
             <ul>
               <li>
-                <a className= "nav-home" href="/">Home</a>
+              {/* className= "nav-home" */}
+                <a   href="/">Home</a>
               </li>
               <li>
-                <a className= "nav-about" href="/">About</a>
+              {/* className= "nav-about" */}
+                <a   href="/">About</a>
               </li>
               <li>
-                <a className= "nav-contact" href="/">Contact</a>
+              {/* className= "nav-contact" */}
+                <a   href="/">Contact</a>
               </li>
             </ul>
           </div>
+           {/* className="nav-bar-right" */}
           <div className="nav-bar-right">
             <ul>
             <li>
